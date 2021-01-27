@@ -1,18 +1,19 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CibleController : MonoBehaviour
+public class CubeControl : MonoBehaviour
 {
     [SerializeField] private Transform spawnPointTransform;
     [SerializeField] private Transform CibleHolderTransform;
-
+    public Material cubeMaterial;
+    
 
     private float flag=9;
     private float y = 0f;
     private float z=0f;
-
+    
+    // Start is called before the first frame update
     
     // Update is called once per frame
     void Update()
@@ -23,7 +24,7 @@ public class CibleController : MonoBehaviour
             Vector3 newPos = posGO + new Vector3(0f, y, z);
 
             // Permet de cree des cibles en haut ou en bas alternativement espacées de 6m
-            Instantiate(Resources.Load("Cible"),
+            Instantiate(Resources.Load("Cube"),
                 newPos,
                 Quaternion.identity,
                 CibleHolderTransform);
@@ -42,10 +43,4 @@ public class CibleController : MonoBehaviour
             flag -= 1;
         }
     }
-
-    
-
-    
 }
-           
-
