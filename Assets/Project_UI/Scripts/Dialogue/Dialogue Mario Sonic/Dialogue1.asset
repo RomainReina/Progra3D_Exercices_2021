@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Dialogue1
   m_EditorClassIdentifier: Assembly-CSharp:Project_UI.Scripts:DialogueMS
   name: Mario
-  text: Salut mon ami, comment va tu ?
+  text: Salut mon ami, comment va tu ?1
