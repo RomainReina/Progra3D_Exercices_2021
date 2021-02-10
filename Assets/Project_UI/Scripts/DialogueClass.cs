@@ -6,8 +6,7 @@ namespace Project_UI.Scripts
 {
     [CreateAssetMenu(
         fileName = "NewDialogue",
-        menuName = "Dialogue",
-        order = 0)]
+        menuName = "Dialogue")]
     public class DialogueClass : ScriptableObject
     {
         [SerializeField] private string text;

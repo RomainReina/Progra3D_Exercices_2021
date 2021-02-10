@@ -16,6 +16,5 @@ public class DialogueManager : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    
+    // Pour changer le textMeshProGUI 
 }
